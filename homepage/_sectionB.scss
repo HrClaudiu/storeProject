@@ -1,0 +1,41 @@
+@import '../mix-ins/mix-ins';
+@import '../variables/variables';
+
+#sectionB {
+    border: 1px solid red;
+    background-color: whitesmoke;
+    @include displayFlexCenter;
+    flex-direction: column;
+    padding: 70px 140px;
+    span {
+        @include sectionFont;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+            margin-bottom: 25px;
+            font-weight:lighter;
+        }
+    }
+    .slide1 {
+        @include displayFlexCenter;
+        flex-direction: row;
+        .product1 {
+            @include slideconfigNewRecipes;
+        }
+        .product2 { 
+            @include slideConfigNewRecipes2;
+        }
+        .product3 {
+            @include slideConfigNewRecipes2;
+        }
+    }
+
+}
+
+@media (max-width: 1400px) {
+    #sectionB {
+        .slide1 {
+            flex-direction: column;
+        }
+    }
+    
+}

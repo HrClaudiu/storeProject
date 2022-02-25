@@ -1,0 +1,25 @@
+@import '../mix-ins/mix-ins.css';
+@import '../variables/variables';
+
+footer {
+    background-color: whitesmoke;
+    @include displayFlexCenter;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 50px 100px;
+
+    div {
+        @include displayFlexCenter;
+        flex-direction: column;
+        span {
+            font-size: 15px;
+            margin: 5px;
+            &:first-child {
+                color: rgba(126, 119, 119, 0.514);
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}

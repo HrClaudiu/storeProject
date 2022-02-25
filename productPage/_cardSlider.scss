@@ -1,0 +1,45 @@
+@import '../mix-ins/mix-ins.css';
+@import '../variables/variables';
+
+
+#cardSlider {
+    background-color: rgb(240, 241, 241);
+    padding: 70px 140px;
+    // backgsround-color: whitesmoke;
+    @include displayFlexCenter;
+    flex-direction: column;
+    text-align: center;
+
+    span {
+        @include sectionFont;
+        @include displayFlexCenter;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+            margin-bottom: 25px;
+        }
+    }
+    .firstslide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+        .firstproduct {
+            @include slideConfig2;
+
+        }
+        .secondproduct {
+            @include slideConfig2;
+        }
+        .thirdproduct {
+            @include slideConfig2;
+        }
+        .fourthproduct {
+            @include slideConfig2;
+        }
+    }
+}

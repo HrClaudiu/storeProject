@@ -1,0 +1,442 @@
+@mixin headerSetup {
+    background-color: $backgroundHeader;
+    height: 60px;
+    // width: 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 60px;
+    ul {
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin: 0 20px 0;
+            img {
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: $standardText;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .logo {
+        height: 50px;
+    }
+    .sideImages {
+        height: 30px;
+        width: 30px;
+    }
+    button {
+        display: none;
+    }
+}
+
+@mixin navSetup {
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    ul  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $standardText;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@mixin displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin titleBold {
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+@mixin subtitle {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: sans-serif;
+
+    // margin-top: 60px;
+    // margin-bottom: 20px;
+}
+@mixin sectionFont {
+    color: $colorSectionTitle;
+    // color: red;
+    opacity: 0.5;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@mixin imageSizeSlider {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+@mixin normalTitle {
+    color: rgb(10, 10, 10);
+    opacity: 0.7;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+/* slideconfig creat prima data cu grid, a 2a oara cu flex(folosim flex)*/
+@mixin slideconfig {
+        // @include slideconfig;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        height: 100%;
+        // flex-direction: row;
+        // border: 1px solid blue;
+        grid-gap: 20px;
+        // justify-content: space-evenly;
+        .product1 {
+            @include displayFlexCenter;
+            flex-direction: column;
+            box-shadow: 2px 5px 10px #888888;
+            border-radius: 5px;
+            img {
+                height: 80%;
+                width: 100%;
+                // @include imageSizeSlider;
+            }
+
+            a {
+                @include normalTitle;
+
+            }
+            button {
+                font-weight: bold;
+                border-radius: 0;
+                border: 1px solid $colorSubtitle;
+                width: 170px;
+                height: 30px;
+                background-color: transparent;
+                margin-top: 20px;
+                opacity: 0.7;
+            }
+        }
+        .product2 {
+            @include displayFlexCenter;
+            flex-direction: column;
+            box-shadow: 2px 5px 10px #888888;
+            border-radius: 5px;
+            img {
+                @include imageSizeSlider;
+            }
+            a {
+                @include normalTitle;
+
+            }
+            button {
+                font-weight: bold;
+                border-radius: 0;
+                border: 1px solid $colorSubtitle;
+                width: 170px;
+                height: 30px;
+                background-color: transparent;
+                margin-top: 20px;
+                opacity: 0.7;
+            }
+            
+
+        }
+        .product3 {
+            @include displayFlexCenter;
+            flex-direction: column;
+            box-shadow: 2px 5px 10px #888888;
+            border-radius: 5px;
+            img {
+                @include imageSizeSlider;
+            }
+            a {
+                @include normalTitle;
+
+            }
+            button {
+                font-weight: bold;
+                border-radius: 0;
+                border: 1px solid $colorSubtitle;
+                width: 170px;
+                height: 30px;
+                background-color: transparent;
+                margin-top: 20px;
+                opacity: 0.7;
+            }
+        }
+}
+
+@mixin slideconfigNewRecipes {
+    padding: 20px;
+    @include displayFlexCenter;
+    margin: 10px;
+    flex-direction: column;
+    box-shadow: 2px 5px 10px #888888;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    img {
+        margin: 20px 10px;
+        height: 200px;
+        width: 400px;
+    }
+    a {
+        @include normalTitle;
+        text-decoration: none;
+    }
+    button {
+        @include buttonBuy;
+        box-shadow: 2px 5px 10px #6d6b6b;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: black;
+        color: whitesmoke;
+        opacity: 0.8;
+    }
+}
+@mixin slideConfigNewRecipes2 {
+    padding: 20px;
+    @include displayFlexCenter;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 2px 5px 10px #888888;
+    border-radius: 5px;
+    width: 250px;
+    height: 400px;
+    img {
+        margin: 20px 10px;
+        height: 200px;
+        width: 200px;
+    }
+    a {
+        @include normalTitle;
+        text-decoration: none;
+    }
+    button {
+        @include buttonBuy;
+        box-shadow: 2px 5px 10px #888888;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: black;
+        color: whitesmoke;
+        opacity: 0.8;
+    }
+}
+
+@mixin boxshadow {
+    box-shadow: 2px 5px 10px #888888;
+}
+
+@mixin buttonBuy {
+    font-weight: bold;
+    border-radius: 0;
+    border: 1px solid $colorSubtitle;
+    width: 170px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 20px;
+    box-shadow: 2px 5px 10px #888888;
+
+    // opacity: 0.7;
+}
+@mixin slideConfig2 {
+    @include displayFlexCenter;
+            // margin: 0 10px;
+            padding: 0 15px;
+            flex-direction: column;
+            gap: 10px;
+            // text-align: center;
+            box-shadow: 2px 5px 10px #888888;
+            border-radius: 5px;
+            width: 220px;
+            background-color: whitesmoke;
+            img {
+                margin: 20px 10px;
+                height: 150px;
+                width: 150px;
+            }
+            .insideText {
+                font-size: 15px;
+                &:first-of-type {
+                    font-weight: bold;
+                }
+            }
+            button {
+                @include buttonBuy;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+}
+
+@mixin sectionTitle {
+    padding: 50px 100px;
+    background-color: whitesmoke;
+    @include displayFlexCenter;
+    flex-direction: column;
+    // padding: 70px 140px;
+    span {
+        @include sectionFont;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+        margin-bottom: 25px;
+        font-weight:lighter;
+        }
+    }
+}
+
+@mixin centerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin productPreview {
+    div {
+        width: 280px;
+        height: 210px;
+        padding: 0;
+        margin: 0;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        .productImage {
+            border: 2px solid yellow;
+            width: 100%;
+            height: 140px;
+            background-image: url("../images/burgerfries.jpg");
+            background-size: cover;
+            background-position: 0 60%;
+        }
+        .productPreview {
+            height: 70px;
+            width: 280px;
+            p, b {
+                margin: 0 5px;
+            }
+           
+            b {
+                font-size: 20px;
+            }
+        }
+         
+    }
+}
+
+
+@mixin addToCart {
+    .addToCart {
+        box-shadow: 2px 5px 10px #888888;    
+        display: grid;
+        grid-template-rows: 3fr 1fr 1fr;
+        .container {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid rgb(0, 0, 0);
+            b, h3 {
+                font-size: 20px;
+            }
+           
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        width: 30px;
+                        height: 30px;
+                        border: 2px solid $backgroundHeader;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .cartButton {
+                // height: 32px;
+                // margin: 15px 0px;
+                background-color: rgb(0, 0, 0);
+                font-weight: bold;
+                border-radius: 0;
+                height: 30px;
+                // background-color: transparent;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                box-shadow: 2px 5px 10px #888888;    
+                color: whitesmoke;
+                &:hover {
+                    background-color: rgb(63, 62, 62);
+
+                }
+            }
+        }
+        button {
+            border-radius: 0;
+            background-color: whitesmoke;
+            border: 0;
+            // border: 1px solid black;
+            box-shadow: 2px 5px 10px #888888;    
+        }
+    }
+}
+
+
+@mixin tableConfig {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    tbody tr td {
+        height: 30px;
+    }
+}

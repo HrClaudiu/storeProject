@@ -1,0 +1,22 @@
+nav {
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    ul  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $standardText;
+            }
+        }
+    }
+}

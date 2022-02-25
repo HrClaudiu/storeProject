@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page1.css" />
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img class="logo" src="../images/cuttlery2.png" alt="website-logo"/>
+        </a>
+        <ul class="openMenu">
+            <li>
+                <img class="sideImages" src="../images/cart.png" alt="website-logo"/>
+                <a href="index.html">Your cart</a>
+            </li>
+            <li>
+                <img class="sideImages" src="../images/profileicon.png" alt="register-icon"/>
+                <a href="index.html">Register</a>
+            </li>
+            <li>
+                <img class="sideImages" src="../images/loginicon.png" alt="login-icon"/>
+                <a href="index.html">Login</a>
+            </li>
+        </ul>
+        <!-- <div class="ham-menu">
+            <button>
+                <img src="../images/hamburger-icon.png" />
+                <ul class="closeMenu">
+                    <li>
+                        <img class="ham-images" src="../images/cart.png" alt="website-logo"/>
+                        <a href="index.html">Your cart</a>
+                    </li>
+                    <li>
+                        <img class="ham-images" src="../images/profileicon.png" alt="register-icon"/>
+                        <a href="index.html">Register</a>
+                    </li>
+                    <li>
+                        <img class="ham-images" src="../images/loginicon.png" alt="login-icon"/>
+                        <a href="index.html">Login</a>
+                    </li>
+                </ul>
+            </button>
+        </div> -->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Supplements</a></li>
+            <li><a href="#">Coaching</a></li>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Calculator</a></li>
+        </ul>
+    </nav>
+    <section class="search">
+        <form>
+            <input type="text" id="field_search" placeholder="Search for recipes" />
+        </form>
+        <button>SEARCH</button>
+    </section>
+    <section class="resultAndFilters">
+        <div class="filters">
+            <h5>FILTER RESULTS</h5>
+            <form>
+                <ul>
+                    <li>
+                        <button>MACROS</button>
+                        <img src="../images/up-icon.png" />
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="field_box" name="box" value="Protein" />
+                        <label for="field_box">Protein</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_box" name="box" value="Carbohidrates" />
+                        <label for="field_box">Carbohidrates</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_box" name="box" value="Fats" />
+                        <label for="field_box">Fats</label>
+                    </li>
+                    <li>
+                         <button>MAINGAIN CALORIES</button>
+                         <img src="../images/up-icon.png" />
+
+                    </li>
+                    <li>
+                         <input type="checkbox" id="field_box" name="box" value="1200-1400" />
+                         <label for="field_box">1200-1400</label>
+                    </li>
+                   
+                    <li>
+                        <input type="checkbox" id="field_box" name="box" value="1400-1600" />
+                        <label for="field_box">1400-1600</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_calories" name="box" value="1600-1800" />
+                        <label for="field_box">1600-1800</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_calories" name="box" value="1800-2000" />
+                        <label for="field_box">1800-2000</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_calories" name="box" value="1800-2000" />
+                        <label for="field_box">2200-2400</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_calories" name="box" value="1800-2000" />
+                        <label for="field_box">2400-2600</label>
+                    </li>
+                    <li>
+                        <button>GENDER</button>
+                        <img src="../images/up-icon.png" />
+                         
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_gender" name="gender" value="Male" />
+                        <label for="field_box">Male</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="field_gender" name="gender" value="Female" />
+                        <label for="field_box">Female</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="productResults">
+            <h2>Browsing recipes for Protein - 12 Results</h2>
+            <div class="sortingBy">
+                <form class="sort">
+                    <label for="sortBy">Sort by</label>
+                    <select name="sorting" id="sortBy">
+                        <option value="price:low-high">Price:Low-High</option>
+                        <option value="price:high-low">Price:High-Low</option>
+                    </select>
+                </form>
+                <form class="sort">
+                    <label for="resultsPerPage">Results per page</label>
+                    <select name="results" id="resultsPerPage">
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select>
+                </form>
+            </div>
+            <div class="products">
+                <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                            This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+                </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+               <div class="single">
+                    <div class="productImage"></div>
+                    <div class="productPreview">
+                        <p>
+                        This is the most amazing burger you will ever eat
+                        </p>
+                        <b>0.99$</b>
+                    </div>
+               </div>
+            </div>
+            <div class="bottom">
+                <div class="bottomFilter">
+                    <form class="sort">
+                        <label for="resultsPerPage">Results per page</label>
+                        <select name="results" id="resultsPerPage">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="pages">
+                    <p>Showing <span>1-12</span> of <span>110</span> results</p>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">2</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">9</a></li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="sectionF">
+        <span>Start your 30-day free trial today. Cancel or upgrade anytime</span>
+        <button>SIGN UP</button>
+    </section>
+    <footer>
+        <div>
+            <span>The Footer</span>
+            <span>&#169; 2019 The Website, Inc.</span>
+        </div>
+        <div>
+            <span>ABOUT</span>
+            <span>Team</span>
+            <span>Jobs</span>
+            <span>Blog</span>
+            <span>Press</span>
+        </div>
+        <div>
+            <span>HELP</span>
+            <span>FAQ</span>
+            <span>Security</span>
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+        </div>
+        <div>
+            <span>CONNECT</span>
+            <span>Facebook</span>
+            <span>YouTube</span>
+            <span>Twitter</span>
+            <span>Instagram</span>
+        </div>
+    </footer>
+</body>
+</html>

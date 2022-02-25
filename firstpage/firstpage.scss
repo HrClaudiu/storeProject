@@ -1,0 +1,32 @@
+@import 'header';
+@import 'nav';
+@import 'hero';
+@import 'section2';
+@import 'section3';
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, div, button, a, ul, li {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0 100px;
+    background-color: rgb(187, 186, 186);
+    user-select: none;
+
+}
+
+@media (max-width: 840px) {
+    body {
+        margin: 0;
+        padding: 0 20px;
+    }
+}

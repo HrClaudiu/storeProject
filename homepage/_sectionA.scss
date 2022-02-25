@@ -1,0 +1,72 @@
+@import '../mix-ins/mix-ins';
+
+
+#sectionA {
+    height: 400px;
+    margin: 0;
+    border: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0.4;
+        background-image: url("../images/foood.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-position: 50% 0;
+    }
+    :nth-child(1),
+    :nth-child(2) {
+        @include titleBold;
+        font-size: 30px;
+        // color: whitesmoke;
+        // font-weight: bold;
+        // font-family: sans-serif;
+
+    }
+    :nth-child(3) {
+        @include subtitle;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        // font-size: 20px;
+        // color: whitesmoke;
+    }
+    :last-child {
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 600px;
+        height: 30px;
+        :first-child {
+            margin-right: 10px;
+            width: 480px;
+            color: gray;
+            font-size: 15px;
+        }
+        :last-child {
+            border: 0;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            width: 150px;
+            border-radius: 0;
+            background-color: rgb(38, 44, 38);
+            color: whitesmoke;
+            cursor: pointer;
+        }
+    }
+
+}

@@ -1,0 +1,746 @@
+/* slideconfig creat prima data cu grid, a 2a oara cu flex(folosim flex)*/
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+header {
+  background-color: rgba(5, 37, 70, 0.568);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  padding: 0 60px;
+}
+
+header ul {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 0;
+}
+
+header ul li img {
+  margin-right: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .logo {
+  height: 50px;
+}
+
+header .sideImages {
+  height: 30px;
+  width: 30px;
+}
+
+header button {
+  display: none;
+}
+
+nav {
+  height: 80px;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.search {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecebeb;
+}
+
+.search form input {
+  width: 400px;
+  height: 30px;
+}
+
+.search button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin: 0 10px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.search button:hover {
+  background-color: #161616;
+}
+
+.productDetails {
+  padding-top: 20px;
+  background-color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 140px;
+}
+
+.productDetails .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.productDetails .details .categories a {
+  text-decoration: none;
+  color: rgba(46, 48, 51, 0.842);
+}
+
+.productDetails .details .categories a:last-child {
+  color: black;
+}
+
+.productDetails .details .productImages .mainImage img {
+  height: 400px;
+  width: 500px;
+}
+
+.productDetails .details .productImages .secondaryImages img {
+  height: 122px;
+  width: 122px;
+}
+
+.productDetails .details .infoStats .first-table table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productDetails .details .infoStats .first-table table tbody tr td {
+  height: 30px;
+  border: 1px solid black;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.productDetails .details .infoStats .first-table table tbody tr .ingredients {
+  background-color: #eee3e3;
+  border: 1px solid black;
+  text-align: center;
+  width: 200px;
+}
+
+.productDetails .details .infoStats .second-table table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productDetails .details .infoStats .second-table table tbody tr td {
+  height: 30px;
+}
+
+.productDetails .details .infoStats .second-table table tbody tr td {
+  border: 1px solid black;
+  height: 30px;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.productDetails .details .infoStats .second-table table tbody tr .macros {
+  background-color: #eee3e3;
+  width: 200px;
+  text-align: center;
+}
+
+.productDetails .details .infoStats .third-table table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productDetails .details .infoStats .third-table table tbody tr td {
+  height: 30px;
+}
+
+.productDetails .details .infoStats .third-table table tbody tr td {
+  border: 1px solid black;
+  height: 30px;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.productDetails .details .infoStats .third-table table tbody tr .item-qty {
+  background-color: #eee3e3;
+  width: 200px;
+  text-align: center;
+}
+
+.productDetails .addToCart {
+  margin-top: 40px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 1fr 1fr;
+      grid-template-rows: 3fr 1fr 1fr;
+  height: 350px;
+}
+
+.productDetails .addToCart .container {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.productDetails .addToCart .container b, .productDetails .addToCart .container h3 {
+  font-size: 20px;
+}
+
+.productDetails .addToCart .container h3 {
+  font-weight: 500;
+}
+
+.productDetails .addToCart .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productDetails .addToCart .container div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+.productDetails .addToCart .container div ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(5, 37, 70, 0.568);
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productDetails .addToCart .container .cartButton {
+  background-color: black;
+  font-weight: bold;
+  border-radius: 0;
+  height: 30px;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  color: whitesmoke;
+}
+
+.productDetails .addToCart .container .cartButton:hover {
+  background-color: #3f3e3e;
+}
+
+.productDetails .addToCart button {
+  border-radius: 0;
+  background-color: whitesmoke;
+  border: 0;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+}
+
+#cardSlider {
+  background-color: #f0f1f1;
+  padding: 70px 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#cardSlider span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#cardSlider span:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+#cardSlider .firstslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 15px;
+}
+
+#cardSlider .firstslide div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#cardSlider .firstslide .firstproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#cardSlider .firstslide .firstproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#cardSlider .firstslide .firstproduct .insideText {
+  font-size: 15px;
+}
+
+#cardSlider .firstslide .firstproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#cardSlider .firstslide .firstproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#cardSlider .firstslide .secondproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#cardSlider .firstslide .secondproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#cardSlider .firstslide .secondproduct .insideText {
+  font-size: 15px;
+}
+
+#cardSlider .firstslide .secondproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#cardSlider .firstslide .secondproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#cardSlider .firstslide .thirdproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#cardSlider .firstslide .thirdproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#cardSlider .firstslide .thirdproduct .insideText {
+  font-size: 15px;
+}
+
+#cardSlider .firstslide .thirdproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#cardSlider .firstslide .thirdproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#cardSlider .firstslide .fourthproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#cardSlider .firstslide .fourthproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#cardSlider .firstslide .fourthproduct .insideText {
+  font-size: 15px;
+}
+
+#cardSlider .firstslide .fourthproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#cardSlider .firstslide .fourthproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#trial {
+  height: 80px;
+  background-color: #333d53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#trial span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+#trial button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  background-color: #262c26;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+footer {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 100px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div span {
+  font-size: 15px;
+  margin: 5px;
+}
+
+footer div span:first-child {
+  color: rgba(126, 119, 119, 0.514);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0 100px;
+  background-color: #bbbaba;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=productpage.css.map */

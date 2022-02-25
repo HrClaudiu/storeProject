@@ -1,0 +1,19 @@
+@import 'header';
+@import 'nav';
+@import 'search';
+@import 'resultAndFilters';
+@import 'trial';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+body {
+    margin: 0;
+    padding: 0 100px;
+    background-color: rgb(187, 186, 186);
+    user-select: none;
+}

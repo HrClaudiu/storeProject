@@ -1,0 +1,56 @@
+@import '../variables/variables';
+@import '../mix-ins/mix-ins.css';
+
+#sectionE {
+    @include displayFlexCenter;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 70px 140px;
+    .sectionTitle {
+        // padding: 50px 100px;
+        @include displayFlexCenter;
+        flex-direction: column;
+        span {
+            @include sectionFont;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+            margin-bottom: 25px;
+            font-weight:lighter;
+            }
+        }
+    }
+    .gridList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 40px;
+        background-color: lightgray;
+        // width: 800px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            img {
+            width: 150px;
+            height: 100px;
+            margin: 8px;
+            border-radius: 5%;
+            }
+            a {
+                @include normalTitle;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #sectionE {
+        .gridList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+    }
+}

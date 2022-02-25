@@ -1,0 +1,25 @@
+@import "../mix-ins/mix-ins.css";
+@import "../variables/variables";
+
+.search {
+    height: 80px;
+    @include centerRow;
+    background-color: rgb(236, 235, 235);
+    form input {
+        width: 400px;
+        height: 30px;
+    }
+    button {
+        // height: 30px;
+        // margin-left: 10px;
+        // border-radius: 0;
+        @include buttonBuy;
+        margin: 0 10px;
+        background-color: rgb(0, 0, 0);
+        color: whitesmoke;
+        &:hover {
+            background-color: rgb(63, 62, 62);
+        }
+
+    }
+}

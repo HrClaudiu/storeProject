@@ -1,0 +1,54 @@
+#sectionC {
+    border: 0;
+    margin: 0;
+    @include displayFlexCenter;
+    flex-direction: column;
+    @include titleBold;
+    text-align: center;
+    padding: 70px 140px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+        background-image: url("../images/burger.png") ;
+        background-size: cover;
+        background-position: 50% 30%;
+        z-index: -1;
+        background-repeat: no-repeat;
+
+    }
+    button {
+        width: 330px;
+        height: 50px;
+        size: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        border-radius: 0;
+        background-color: rgb(38, 44, 38);
+        color: whitesmoke;
+        opacity: 0.4;
+        &:hover {
+            background-color: rgb(14, 15, 14);
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #sectionC {
+        padding: 30px;
+    }
+}
+@media (max-width: 650px) {
+    #sectionC {
+        button {
+            width: 200px;
+        }
+    }
+}

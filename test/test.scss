@@ -1,0 +1,39 @@
+@mixin setcolor($color) {
+    background-color: $color;
+    }
+body {
+    margin: 0;
+    .container {
+        height: 100vh;
+        .message {
+            display: block;
+            width: 500px;
+            background-color: red;
+            border-radius: 10px;
+            &--error {
+                @include setcolor(orange);
+            }
+            &--warning {
+                @include setcolor(red);
+            }
+            &--success {
+                @include setcolor(lightblue);
+            }
+
+            p {
+                color: white;
+                text-align: center;
+                padding: 0 100px;
+            }
+        }
+    } 
+}
+
+// }
+// @mixin success {
+//     background-color: $color;
+// }@mixin fail {
+//     background-color: $color;
+// }@mixin info {
+//     background-color: $color;
+// }

@@ -1,0 +1,1059 @@
+/* slideconfig creat prima data cu grid, a 2a oara cu flex(folosim flex)*/
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+@import url(c:\Users\ihhromei\Desktop\Proiect\mix-ins\mix-ins.css);
+#sectionA {
+  height: 400px;
+  margin: 0;
+  border: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#sectionA::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.4;
+  background-image: url("../images/foood.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: 50% 0;
+}
+
+#sectionA :nth-child(1),
+#sectionA :nth-child(2) {
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+#sectionA :nth-child(3) {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#sectionA :last-child {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 600px;
+  height: 30px;
+}
+
+#sectionA :last-child :first-child {
+  margin-right: 10px;
+  width: 480px;
+  color: gray;
+  font-size: 15px;
+}
+
+#sectionA :last-child :last-child {
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  width: 150px;
+  border-radius: 0;
+  background-color: #262c26;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+header {
+  height: 80px;
+  background-color: #333d53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+header .logo {
+  width: 100px;
+  height: 60px;
+  background-image: url("../images/cuttlery2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .topbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 400px;
+  height: 50px;
+}
+
+header .topbuttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .topbuttons div button {
+  text-align: left;
+  border: 0;
+  height: 45px;
+  width: 75px;
+  font-size: 15px;
+  background-color: #333d53;
+  cursor: pointer;
+}
+
+header .topbuttons div img {
+  width: 25px;
+  height: 25px;
+}
+
+nav {
+  height: 80px;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+nav button {
+  font-size: 15px;
+  background-color: whitesmoke;
+  border: 0;
+}
+
+nav button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 701px) {
+  nav {
+    padding: 0px 15px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    padding: 0px 100px;
+  }
+}
+
+/* slideconfig creat prima data cu grid, a 2a oara cu flex(folosim flex)*/
+#sectionB {
+  border: 1px solid red;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 140px;
+}
+
+#sectionB span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#sectionB span:nth-child(2) {
+  margin-bottom: 25px;
+  font-weight: lighter;
+}
+
+#sectionB .slide1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#sectionB .slide1 .product1 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+}
+
+#sectionB .slide1 .product1 img {
+  margin: 20px 10px;
+  height: 200px;
+  width: 400px;
+}
+
+#sectionB .slide1 .product1 a {
+  color: #0a0a0a;
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#sectionB .slide1 .product1 button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  -webkit-box-shadow: 2px 5px 10px #6d6b6b;
+          box-shadow: 2px 5px 10px #6d6b6b;
+  border-radius: 5px;
+}
+
+#sectionB .slide1 .product1 button:hover {
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+#sectionB .slide1 .product2 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 250px;
+  height: 400px;
+}
+
+#sectionB .slide1 .product2 img {
+  margin: 20px 10px;
+  height: 200px;
+  width: 200px;
+}
+
+#sectionB .slide1 .product2 a {
+  color: #0a0a0a;
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#sectionB .slide1 .product2 button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+}
+
+#sectionB .slide1 .product2 button:hover {
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+#sectionB .slide1 .product3 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 250px;
+  height: 400px;
+}
+
+#sectionB .slide1 .product3 img {
+  margin: 20px 10px;
+  height: 200px;
+  width: 200px;
+}
+
+#sectionB .slide1 .product3 a {
+  color: #0a0a0a;
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#sectionB .slide1 .product3 button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+}
+
+#sectionB .slide1 .product3 button:hover {
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+@media (max-width: 1400px) {
+  #sectionB .slide1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#sectionC {
+  border: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 70px 140px;
+  position: relative;
+}
+
+#sectionC::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background-image: url("../images/burger.png");
+  background-size: cover;
+  background-position: 50% 30%;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+#sectionC button {
+  width: 330px;
+  height: 50px;
+  size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 0;
+  background-color: #262c26;
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+#sectionC button:hover {
+  background-color: #0e0f0e;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  #sectionC {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  #sectionC button {
+    width: 200px;
+  }
+}
+
+#sectionD {
+  padding: 70px 140px;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#sectionD span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#sectionD span:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+#sectionD .firstslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sectionD .firstslide > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#sectionD .firstslide .firstproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#sectionD .firstslide .firstproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#sectionD .firstslide .firstproduct .insideText {
+  font-size: 15px;
+}
+
+#sectionD .firstslide .firstproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#sectionD .firstslide .firstproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#sectionD .firstslide .secondproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#sectionD .firstslide .secondproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#sectionD .firstslide .secondproduct .insideText {
+  font-size: 15px;
+}
+
+#sectionD .firstslide .secondproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#sectionD .firstslide .secondproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#sectionD .firstslide .thirdproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#sectionD .firstslide .thirdproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#sectionD .firstslide .thirdproduct .insideText {
+  font-size: 15px;
+}
+
+#sectionD .firstslide .thirdproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#sectionD .firstslide .thirdproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#sectionD .firstslide .fourthproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+  width: 220px;
+  background-color: whitesmoke;
+}
+
+#sectionD .firstslide .fourthproduct img {
+  margin: 20px 10px;
+  height: 150px;
+  width: 150px;
+}
+
+#sectionD .firstslide .fourthproduct .insideText {
+  font-size: 15px;
+}
+
+#sectionD .firstslide .fourthproduct .insideText:first-of-type {
+  font-weight: bold;
+}
+
+#sectionD .firstslide .fourthproduct button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  #sectionD .firstslide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  #sectionD .firstslide > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #sectionD {
+    padding: 70px 30px;
+  }
+}
+
+#sectionE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightgray;
+  padding: 70px 140px;
+}
+
+#sectionE .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sectionE .sectionTitle span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#sectionE .sectionTitle span:nth-child(2) {
+  margin-bottom: 25px;
+  font-weight: lighter;
+}
+
+#sectionE .gridList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 40px;
+  background-color: lightgray;
+}
+
+#sectionE .gridList div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sectionE .gridList div img {
+  width: 150px;
+  height: 100px;
+  margin: 8px;
+  border-radius: 5%;
+}
+
+#sectionE .gridList div a {
+  color: #0a0a0a;
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  #sectionE .gridList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+#sectionF {
+  height: 80px;
+  background-color: #333d53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#sectionF span {
+  color: #141212;
+  opacity: 0.5;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+#sectionF button {
+  font-weight: bold;
+  border-radius: 0;
+  border: 1px solid rgba(46, 48, 51, 0.842);
+  width: 170px;
+  height: 30px;
+  background-color: transparent;
+  background-color: #262c26;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  #sectionF {
+    padding: 0px 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  #sectionF {
+    padding: 5px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 100px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div span {
+  font-size: 15px;
+  margin: 5px;
+}
+
+footer div span:first-child {
+  color: rgba(126, 119, 119, 0.514);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body {
+  background-color: #b6acac;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body #first-page {
+  font-family: sans-serif;
+  width: 80vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #first-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=homepage.css.map */

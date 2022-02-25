@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+body .container {
+  height: 100vh;
+}
+
+body .container .message {
+  display: block;
+  width: 500px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+body .container .message--error {
+  background-color: orange;
+}
+
+body .container .message--warning {
+  background-color: red;
+}
+
+body .container .message--success {
+  background-color: lightblue;
+}
+
+body .container .message p {
+  color: white;
+  text-align: center;
+  padding: 0 100px;
+}
+/*# sourceMappingURL=test.css.map */

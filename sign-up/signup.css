@@ -1,0 +1,210 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: whitesmoke;
+}
+
+body #page {
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 2px 5px 10px #888888;
+          box-shadow: 2px 5px 10px #888888;
+  border-radius: 5px;
+}
+
+body #page #welcome {
+  margin: 0;
+  border: 0;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body #page #welcome::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  background-image: url("../images/gym2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+body #page #welcome .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body #page #welcome .motto {
+  font-size: 20px;
+  margin: 5px 50px 25px 50px;
+}
+
+body #page #welcome .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #page #welcome .button-container button {
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+}
+
+body #page #welcome .button-container button:hover {
+  color: white;
+  background-color: #272525;
+  opacity: 0.6;
+}
+
+body #page #sign-up {
+  width: 600px;
+  height: 600px;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #page #sign-up :first-child img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 130px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body #page #sign-up :nth-child(2) span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body #page #sign-up form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 15px;
+}
+
+body #page #sign-up form .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 520px;
+}
+
+body #page #sign-up form .columns .first-column, body #page #sign-up form .columns .second-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+  margin-top: 30px;
+  width: 250px;
+  height: 220px;
+}
+
+body #page #sign-up form .columns .first-column label, body #page #sign-up form .columns .second-column label {
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+body #page #sign-up form .columns .first-column input, body #page #sign-up form .columns .second-column input {
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+body #page #sign-up .submit input {
+  width: 330px;
+  height: 50px;
+  size: 50px;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 0;
+  background-color: #262c26;
+  color: whitesmoke;
+}
+
+body #page #sign-up div a {
+  font-size: 20px;
+  color: black;
+}
+/*# sourceMappingURL=signup.css.map */

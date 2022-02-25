@@ -1,0 +1,49 @@
+nav {
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    button {
+        font-size: 15px;
+        background-color: whitesmoke;
+        border: 0;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+}
+@media (max-width: 700px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 701px) {
+    nav {
+        padding: 0px 15px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 900px) {
+    nav {
+        padding: 0px 100px;
+    }
+}
+
+// @media (min-width: 450px) and (max-width: 750px) {
+//     nav {
+//         flex-direction: column;
+//         height: auto;
+//         padding: 15px;
+//     }
+// }
+
+

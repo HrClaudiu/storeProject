@@ -1,0 +1,6 @@
+@import '../mix-ins/mix-ins.css';
+@import '../variables/variables';
+
+nav {
+    @include navSetup;
+}

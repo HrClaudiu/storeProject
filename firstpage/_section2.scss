@@ -1,0 +1,84 @@
+@import '../variables/variables';
+@import '../mix-ins/mix-ins';
+
+
+.section2 {
+    background-color: whitesmoke;
+    // @include centerRow;
+    padding: 50px 50px;
+    ;
+    h1, h2, h3 {
+        color: $colorSubtitle;
+        text-align: center;
+    }
+    .slideContainer {
+        // @include displayFlexCenter
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        .arrowButton {
+            background-color: transparent;
+            border: 0;
+        }
+        .arrowButton .arrow {
+            min-height: 32px;
+            min-width: 32px;
+            margin: 10px;
+        }
+        
+        .card1  {
+            @include slideconfigNewRecipes;
+        }
+        .card2, .card3 {
+            @include slideConfigNewRecipes2;
+        }
+        .card3 {
+            img {
+                height: 180px;
+                margin-top: 40px;
+            }
+        }
+        
+        //     padding: 20px 10px;
+        //     border-radius: 5px;
+        //     box-shadow: 2px 5px 10px #888888;
+        //     display: flex;
+        //     flex-direction: column;
+        //     text-align: center;
+        //     align-items: center;
+        // }
+        // .card1 {
+        //     width: 500px;
+        //     height: 400px;
+        //     // min-height: 200px;
+        //     // min-width: 400px;
+        //     img {
+        //         margin: 20px 10px;
+        //         height: 200px;
+        //         width: 300px;
+        //     }
+            
+        // }
+        // .card2 {
+        //     width: 250px;
+        //     height: 400px;
+        //     margin-right: 20px;
+        //     margin-left: 20px;
+        //     img {
+        //         margin: 20px 10px;
+        //         height: 200px;
+        //         width: 200px;
+        //     }
+        // }
+        // .card3 {
+        //     width: 250px;
+        //     height: 400px;
+        //     img {
+        //         margin: 40px 10px;
+        //         height: 160px;
+        //         width: 200px;
+        //     }
+    }
+}

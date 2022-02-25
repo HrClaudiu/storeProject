@@ -1,0 +1,169 @@
+
+
+.productDetails {
+    padding-top: 20px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    // flex-direction: row;
+    padding: 30px 140px;
+    .details {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .categories {
+            a {
+                text-decoration: none;
+                color: $colorSubtitle;
+                &:last-child {
+                    color: black;
+                }
+            }
+        }
+        .productImages {
+            .mainImage {
+                img {
+                height: 400px;
+                width: 500px;
+                }
+            }
+            .secondaryImages {
+                img {
+                    height: 122px;
+                    width: 122px;
+                }
+            }
+        }
+
+        .infoStats {    
+            .first-table table {
+                border: 1px solid black;
+                width: 100%;
+                border-collapse: collapse;
+                tbody tr td {
+                    height: 30px;
+                    border: 1px solid black;
+                    // border-collapse: collapse;
+                    text-align: right;
+                    padding: 0 10px;
+                }
+                tbody tr .ingredients {
+                    background-color: #eee3e3;  
+                    border: 1px solid black;
+                    text-align: center;
+                    width: 200px;
+                }
+            }
+            .second-table table {
+                @include tableConfig;
+                tbody tr {
+                    td {
+                    border: 1px solid black;
+                    height: 30px;
+                    text-align: right;
+                    padding: 0 10px;
+                    }
+                    .macros {
+                        background-color: #eee3e3;
+                        width: 200px;
+                        text-align: center;
+                    }
+                }
+            }
+            
+            .third-table table {
+                @include tableConfig;
+                tbody tr {
+                    td {
+                    border: 1px solid black;
+                    height: 30px;
+                    text-align: right;
+                    padding: 0 10px;
+                    }
+                    .item-qty {
+                        background-color: #eee3e3;
+                        width: 200px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+    .addToCart {
+        margin-top: 40px;
+        // padding-top: px;
+        box-shadow: 2px 5px 10px #888888;    
+        display: grid;
+        grid-template-rows: 3fr 1fr 1fr;
+        height: 350px;
+        .container {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid rgb(0, 0, 0);
+            b, h3 {
+                font-size: 20px;
+            }
+            h3 {
+                font-weight: 500;
+            }
+           
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        width: 30px;
+                        height: 30px;
+                        border: 2px solid $backgroundHeader;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .cartButton {
+                // height: 32px;
+                // margin: 15px 0px;
+                background-color: rgb(0, 0, 0);
+                font-weight: bold;
+                border-radius: 0;
+                height: 30px;
+                // background-color: transparent;
+                margin-top: 20px;
+                // margin-bottom: 15px;
+                box-shadow: 2px 5px 10px #888888;    
+                color: whitesmoke;
+                &:hover {
+                    background-color: rgb(63, 62, 62);
+
+                }
+            }
+        }
+        button {
+            border-radius: 0;
+            background-color: whitesmoke;
+            border: 0;
+            // border: 1px solid black;
+            box-shadow: 2px 5px 10px #888888;    
+        }
+    }
+}
